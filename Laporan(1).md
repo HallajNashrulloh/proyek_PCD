@@ -1,4 +1,4 @@
-# Deteksi Dini Penyakit Diabetes dengan Machine Learning
+# Deteksi Penyakit Hati/Liver dengan Segmentasi Image Processing 
 
 ## **1. Domain Proyek**
 Penyakit diabetes merupakan salah satu masalah kesehatan utama yang terus meningkat secara global. Deteksi dini sangat penting untuk mencegah komplikasi yang lebih serius seperti:
