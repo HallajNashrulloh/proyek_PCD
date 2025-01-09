@@ -7,7 +7,7 @@ Kelas : Informatika-A
 
 ## **1. Domain Proyek**
 Penyakit hati merupakan salah satu masalah kesehatan utama di dunia yang dapat memicu komplikasi serius seperti:
-- **Sirosis hati** yang merupakan jaringan parut pada hati akibat kerusakan kronis, menyebabkan gangguan fungsi hati.
+- **Sirosis hati** yang merupakan jaringan perut pada hati akibat kerusakan kronis, menyebabkan gangguan fungsi hati.
 - **Hepatitis Kronis** yang disebabkan oleh infeksi virus atau konsumsi alkohol berlebihan, yang dapat berkembang menjadi siroris atau kanker hati.
 - **Kanker Hati** ini yang sering kali terdeteksi pada tahap lanjut, sehingga sulit untuk diobati dengan sukses.
 
