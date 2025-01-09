@@ -46,6 +46,6 @@ Menurut penelitian Smith, Johnson, % Lee (2021), penerapan segmentasi image proc
 ---
 
 ## **5. Percobaan yang dilakukan**
-- pada percobaan pertama thresholding yang kurang tepat untuk mendeteksi area yang terjangkit sehingga anomali yang terbaca kurang tepat dan malah menandai seluruh gambar yang ada.
+- pada percobaan pertama kurang tepat untuk mendeteksi area yang terjangkit sehingga anomali yang terbaca kurang tepat dan malah menandai seluruh gambar yang ada.
 - setelah dilakukan beberapa percobaan hasil deteksi area mulai mendekati kemungkinan tetapi masih perlu memperbaiki kode yang ada.
 
