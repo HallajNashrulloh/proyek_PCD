@@ -1,7 +1,4 @@
 Pengolahan CItra DIgital :
-Nama : Muhammad Hallaj Nashrulloh
-NIM : 2206031
-Kelas : Informatika-A
 
 # Deteksi Penyakit Hati/Liver dengan Segmentasi Image Processing 
 
