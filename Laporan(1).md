@@ -81,5 +81,6 @@ Menurut penelitian Smith, Johnson, % Lee (2021), penerapan segmentasi image proc
 
 ---
 Nama : Muhammad Hallaj Nashrulloh
+---
 NIM : 2206031
 ---
