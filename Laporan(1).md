@@ -56,7 +56,7 @@ Metodologi yang digunakan dalam proyek ini mencakup beberapa tahapan berikut:
 
 ---
 
-## **6. Percobaan yang dilakukan**
+## **6. Percobaan yang dilakukan (Tambah dan lakukan percobaan yang lebih banyak)**
 - pada percobaan pertama kurang tepat untuk mendeteksi area yang terjangkit sehingga anomali yang terbaca kurang tepat dan malah menandai seluruh gambar yang ada.
 - setelah dilakukan beberapa percobaan hasil deteksi area mulai mendekati kemungkinan tetapi masih perlu memperbaiki kode yang ada.
 
