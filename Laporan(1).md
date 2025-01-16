@@ -60,15 +60,6 @@ Menurut penelitian Smith, Johnson, % Lee (2021), penerapan segmentasi image proc
 
 ---
 
-## **4. Manfaat Proyek**
-
-- **Kecepatan**: Mempercepat proses identifikasi risiko penyakit hati.
-- **Akurasi**: Mengurangi potensi kesalahan dalam interpretasi manusia.
-- 
-- 
-
----
-
 ## **5. Referensi**
 1. Smith, J., Johnson, R., % Lee, M. (2021). *Image Processing for Early Detection of Liver Diseases.*
 2. World Health Organization. (2022). *Global Report on Liver Desease*.
