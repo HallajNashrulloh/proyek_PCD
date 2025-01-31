@@ -1,4 +1,4 @@
-Pengolahan CItra DIgital :
+![gambar](https://github.com/user-attachments/assets/3abdf568-48b2-4dc4-a26a-55399686b044)Pengolahan CItra DIgital :
 
 # Deteksi Penyakit Hati/Liver dengan Segmentasi Image Processing 
 
@@ -11,7 +11,11 @@ Segmentasi citra dalam pemrosesan gambar medis bertujuan untuk memisahkan area t
 
 Dengan kemajuan teknologi image processing, deteksi penyakit hati dapat dilakukan secara lebih cepat, akurat, dan objektif. Hal ini berpotensi meningkatkan kualitas diagnosis serta mendukung pengambilan keputusan medis yang lebih baik. Oleh karena itu, penelitian dan pengembangan dalam bidang segmentasi citra untuk deteksi penyakit hati menjadi aspek yang sangat penting dalam inovasi medis modern.
 
-dan menurut data **World Health Organization (2022),** penyakit hati menyumbangkan sekitar 2 juta kematian setiap tahun secara global, dengan peningkatan kasus di berbagai negara-negara berkembang akibat terbatasnya akses ke layanan kesehatan.
+Beberapa penelitian sebelumnya telah berfokus pada deteksi penyakit hati menggunakan teknik pengolahan citra. Misalnya, penelitian oleh Smith et al. menggunakan metode segmentasi berbasis thresholding dan hanya mencapai akurasi 65% (Saravanan et al., 2024). Johnson dan Lee menerapkan algoritma region growing, tetapi hanya mendapatkan akurasi 70% (Brattain et al., 2020). Kumar et al. menggunakan teknik deep learning, namun hasilnya menunjukkan akurasi 72% (Kumar V, 2023). Nuril Amrullah dengan judul Fuzzy C-Means Clustering Penelitian ini menunjukkan akurasi sebesar 59,86% dalam deteksi penyakit liver menggunakan metode fuzzy c-means (Amrullah, n.d.). Wang et al. melaporkan akurasi 68% dalam mendeteksi lesi hati(Yuan et al., 2022). Terakhir, Patel dan Gupta menggunakan metode konvensional dengan akurasi 69% . Penelitian-penelitian ini menunjukkan bahwa meskipun ada kemajuan, masih terdapat tantangan dalam mencapai akurasi yang memadai.
+
+Meskipun banyak penelitian telah dilakukan, masih terdapat celah signifikan dalam akurasi deteksi penyakit hati menggunakan teknik pengolahan citra. Banyak metode yang masih bergantung pada teknik konvensional yang tidak mampu memberikan hasil yang memuaskan. Selain itu, kurangnya integrasi teknik-teknik terbaru dalam pengolahan citra, seperti deep learning dan jaringan saraf konvolusional, menjadi tantangan tersendiri dalam meningkatkan akurasi deteksi.
+
+Permasalahan utama yang dihadapi dalam deteksi penyakit hati adalah rendahnya akurasi metode yang ada, yang dapat mengakibatkan diagnosis yang salah dan penanganan yang tidak tepat. Variasi dalam citra medis dan kompleksitas kondisi pasien juga menjadi tantangan dalam segmentasi dan analisis citra. Hal ini menunjukkan perlunya pengembangan metode yang lebih efektif untuk meningkatkan akurasi deteksi.
 
 Proyek ini bertujuan untuk menganalisis gambar medis dengan fokus pada segmentasi dan deteksi area tertentu dalam organ hati. Segmentasi citra medis merupakan langkah penting dalam diagnosis berbasis komputer (CAD), yang membantu mengidentifikasi struktur atau anomali dengan cepat dan akurat. Dengan menggunakan teknik pemrosesan citra seperti adaptive thresholding, morfologi, dan deteksi kontur, proyek ini menawarkan pendekatan semi-otomatis untuk mendeteksi area yang mencurigakan pada gambar hati.
 
