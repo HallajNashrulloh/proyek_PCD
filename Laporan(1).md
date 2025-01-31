@@ -46,6 +46,11 @@ Metodologi yang digunakan dalam proyek ini mencakup beberapa tahapan berikut:
 
 ![metode](model.png)
 
+Model U-Net adalah arsitektur jaringan saraf tiruan berbasis Convolutional Neural Network (CNN) yang dirancang khusus untuk tugas segmentasi citra. Model ini memiliki struktur berbentuk “U” yang terdiri dari dua bagian utama: encoder dan decoder.
+Pada tahap encoder, jaringan ini menggunakan beberapa lapisan konvolusi bertumpuk yang diikuti oleh operasi max pooling, yang bertujuan untuk mengekstrak fitur penting dari citra masukan. Proses ini membantu mengurangi dimensi citra sambil mempertahankan informasi yang paling relevan.
+Selanjutnya, pada tahap decoder, jaringan menggunakan operasi up-sampling dan konvolusi transposisional untuk mengembalikan resolusi citra ke ukuran aslinya. Proses ini juga memanfaatkan informasi dari tahap encoder melalui skip connection, yang menghubungkan lapisan dengan resolusi yang sama di kedua tahap. Skip connection ini memungkinkan model untuk mempertahankan detail spasial yang lebih baik, sehingga meningkatkan ketepatan segmentasi.
+Keunggulan U-Net terletak pada kemampuannya dalam menghasilkan segmentasi dengan batas yang jelas, bahkan pada dataset berukuran kecil. Oleh karena itu, model ini banyak digunakan dalam berbagai aplikasi, terutama dalam bidang medis untuk mendeteksi dan mengsegmentasi organ atau jaringan dari citra medis seperti MRI dan CT scan.
+
 ---
 
 ## **3. Hasil**
