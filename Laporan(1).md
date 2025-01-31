@@ -59,35 +59,35 @@ Keunggulan U-Net terletak pada kemampuannya dalam menghasilkan segmentasi dengan
 1. Eksperimen Pertama: Pra-pemrosesan Citra
 Eksperimen pertama berfokus pada pra-pemrosesan citra, termasuk konversi ke grayscale, normalisasi, dan augmentasi citra untuk meningkatkan kualitas input sebelum masuk ke model.
 Visualisasi Hasil:
-•	Citra asli dan hasil konversi ke grayscale.
- ![metode](h1.png).
-•	Citra setelah normalisasi dan augmentasi.
-  ![metode](h2.png).
+- Citra asli dan hasil konversi ke grayscale.
+ - ![metode](h1.png).
+- Citra setelah normalisasi dan augmentasi.
+- ![metode](h2.png).
 
 2. Eksperimen Kedua: Segmentasi Citra menggunakan U-Net
 Pada eksperimen ini, model U-Net digunakan untuk melakukan segmentasi pada citra. Model dilatih menggunakan gambar berukuran 256x256 piksel dengan mask ground truth. Setelah proses pelatihan selama 10 epoch, model menghasilkan segmentasi yang cukup akurat.
 Visualisasi Hasil:
-•	Gambar Asli: Menampilkan citra asli yang digunakan sebagai input model.
+- Gambar Asli: Menampilkan citra asli yang digunakan sebagai input model.
   - ![metode](h3.png).
-![metode](h4.png).
-•	Mask Ground Truth: Menunjukkan label segmentasi asli dari dataset.
+- ![metode](h4.png).
+- Mask Ground Truth: Menunjukkan label segmentasi asli dari dataset.
  - ![metode](h5.png).
-•	Mask Hasil Prediksi: Mask yang dihasilkan oleh model setelah proses pelatihan.
+- Mask Hasil Prediksi: Mask yang dihasilkan oleh model setelah proses pelatihan.
     - ![metode](h6.png).
 3. Eksperimen Ketiga: Segmentasi Liver menggunakan Metode Watershed
 Eksperimen ini menggunakan metode Watershed untuk melakukan segmentasi liver dari citra medis. Metode ini bekerja dengan menerapkan thresholding Otsu, morfologi opening, serta transformasi jarak untuk memisahkan objek dengan latar belakang.
 Visualisasi Hasil:
-•	Citra asli dengan hasil segmentasi yang ditandai batas merah.
+- Citra asli dengan hasil segmentasi yang ditandai batas merah.
    - ![metode](h7.png).
     - ![metode](h8.png).
-•	Mask segmentasi yang menunjukkan area liver yang telah dipisahkan.
+- Mask segmentasi yang menunjukkan area liver yang telah dipisahkan.
  - ![metode](h9.png).
 5. Eksperimen Keempat: Deteksi Tepi menggunakan Canny
 Pada eksperimen ini, metode Canny digunakan untuk mengekstrak tepi dari citra. Dengan menggunakan parameter threshold yang disesuaikan, hasil deteksi tepi dapat meningkatkan pemahaman struktur objek dalam gambar.
 Visualisasi Hasil:
-•	Citra asli.
+- Citra asli.
 - ![metode](h10.png).
-•	Citra hasil deteksi tepi dengan filter Canny.
+- Citra hasil deteksi tepi dengan filter Canny.
  - ![metode](h11.png).
 
 Hasil eksperimen menunjukkan bahwa model U-Net mampu memberikan segmentasi yang cukup akurat, sedangkan metode Watershed dapat digunakan untuk segmentasi berbasis fitur dengan hasil yang baik. Selain itu, metode Canny memberikan representasi tepi yang berguna untuk analisis lebih lanjut.
