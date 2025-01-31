@@ -68,27 +68,27 @@ Visualisasi Hasil:
 Pada eksperimen ini, model U-Net digunakan untuk melakukan segmentasi pada citra. Model dilatih menggunakan gambar berukuran 256x256 piksel dengan mask ground truth. Setelah proses pelatihan selama 10 epoch, model menghasilkan segmentasi yang cukup akurat.
 Visualisasi Hasil:
 •	Gambar Asli: Menampilkan citra asli yang digunakan sebagai input model.
-  ![metode](h3.png).
+  - ![metode](h3.png).
 ![metode](h4.png).
 •	Mask Ground Truth: Menunjukkan label segmentasi asli dari dataset.
- ![metode](h5.png).
+ - ![metode](h5.png).
 •	Mask Hasil Prediksi: Mask yang dihasilkan oleh model setelah proses pelatihan.
-    ![metode](h6.png).
+    - ![metode](h6.png).
 3. Eksperimen Ketiga: Segmentasi Liver menggunakan Metode Watershed
 Eksperimen ini menggunakan metode Watershed untuk melakukan segmentasi liver dari citra medis. Metode ini bekerja dengan menerapkan thresholding Otsu, morfologi opening, serta transformasi jarak untuk memisahkan objek dengan latar belakang.
 Visualisasi Hasil:
 •	Citra asli dengan hasil segmentasi yang ditandai batas merah.
-   ![metode](h7.png).
-    ![metode](h8.png).
+   - ![metode](h7.png).
+    - ![metode](h8.png).
 •	Mask segmentasi yang menunjukkan area liver yang telah dipisahkan.
- ![metode](h9.png).
+ - ![metode](h9.png).
 5. Eksperimen Keempat: Deteksi Tepi menggunakan Canny
 Pada eksperimen ini, metode Canny digunakan untuk mengekstrak tepi dari citra. Dengan menggunakan parameter threshold yang disesuaikan, hasil deteksi tepi dapat meningkatkan pemahaman struktur objek dalam gambar.
 Visualisasi Hasil:
 •	Citra asli.
-![metode](h10.png).
+- ![metode](h10.png).
 •	Citra hasil deteksi tepi dengan filter Canny.
- ![metode](h11.png).
+ - ![metode](h11.png).
 
 Hasil eksperimen menunjukkan bahwa model U-Net mampu memberikan segmentasi yang cukup akurat, sedangkan metode Watershed dapat digunakan untuk segmentasi berbasis fitur dengan hasil yang baik. Selain itu, metode Canny memberikan representasi tepi yang berguna untuk analisis lebih lanjut.
 
