@@ -21,6 +21,8 @@ Proyek ini bertujuan untuk menganalisis gambar medis dengan fokus pada segmentas
 
 ## **2. Metodologi**
 
+![metode](metod.png)
+
 Metodologi yang digunakan dalam proyek ini mencakup beberapa tahapan berikut:
 
 1. Pengumpulan Data: Gambar input diimpor dalam format digital menggunakan pustaka OpenCV. Citra input harus berupa citra medis hati yang relevan.
@@ -42,30 +44,64 @@ Metodologi yang digunakan dalam proyek ini mencakup beberapa tahapan berikut:
 
 6. Evaluasi: Menilai hasil segmentasi dan deteksi dengan membandingkannya terhadap ground truth jika tersedia.
 
-
+![metode](model.png)
 
 ---
 
 ## **3. Hasil**
+1. Eksperimen Pertama: Pra-pemrosesan Citra
+Eksperimen pertama berfokus pada pra-pemrosesan citra, termasuk konversi ke grayscale, normalisasi, dan augmentasi citra untuk meningkatkan kualitas input sebelum masuk ke model.
+Visualisasi Hasil:
+•	Citra asli dan hasil konversi ke grayscale.
+ ![metode](h1.png).
+•	Citra setelah normalisasi dan augmentasi.
+  ![metode](h2.png).
+
+2. Eksperimen Kedua: Segmentasi Citra menggunakan U-Net
+Pada eksperimen ini, model U-Net digunakan untuk melakukan segmentasi pada citra. Model dilatih menggunakan gambar berukuran 256x256 piksel dengan mask ground truth. Setelah proses pelatihan selama 10 epoch, model menghasilkan segmentasi yang cukup akurat.
+Visualisasi Hasil:
+•	Gambar Asli: Menampilkan citra asli yang digunakan sebagai input model.
+  ![metode](h3.png).
+![metode](h4.png).
+•	Mask Ground Truth: Menunjukkan label segmentasi asli dari dataset.
+ ![metode](h5.png).
+•	Mask Hasil Prediksi: Mask yang dihasilkan oleh model setelah proses pelatihan.
+    ![metode](h6.png).
+3. Eksperimen Ketiga: Segmentasi Liver menggunakan Metode Watershed
+Eksperimen ini menggunakan metode Watershed untuk melakukan segmentasi liver dari citra medis. Metode ini bekerja dengan menerapkan thresholding Otsu, morfologi opening, serta transformasi jarak untuk memisahkan objek dengan latar belakang.
+Visualisasi Hasil:
+•	Citra asli dengan hasil segmentasi yang ditandai batas merah.
+   ![metode](h7.png).
+    ![metode](h8.png).
+•	Mask segmentasi yang menunjukkan area liver yang telah dipisahkan.
+ ![metode](h9.png).
+5. Eksperimen Keempat: Deteksi Tepi menggunakan Canny
+Pada eksperimen ini, metode Canny digunakan untuk mengekstrak tepi dari citra. Dengan menggunakan parameter threshold yang disesuaikan, hasil deteksi tepi dapat meningkatkan pemahaman struktur objek dalam gambar.
+Visualisasi Hasil:
+•	Citra asli.
+![metode](h10.png).
+•	Citra hasil deteksi tepi dengan filter Canny.
+ ![metode](h11.png).
+
+Hasil eksperimen menunjukkan bahwa model U-Net mampu memberikan segmentasi yang cukup akurat, sedangkan metode Watershed dapat digunakan untuk segmentasi berbasis fitur dengan hasil yang baik. Selain itu, metode Canny memberikan representasi tepi yang berguna untuk analisis lebih lanjut.
 
 ---
 
 ## **4. Kesimpulan**
+Berdasarkan eksperimen yang dilakukan, ditemukan bahwa pra-pemrosesan citra dapat meningkatkan kualitas input untuk model, yang berpengaruh pada hasil segmentasi yang lebih baik. Model U-Net mampu memberikan hasil segmentasi yang cukup akurat setelah proses pelatihan, sedangkan metode Watershed terbukti efektif untuk segmentasi berbasis fitur, terutama pada citra medis. Selain itu, metode deteksi tepi Canny memberikan representasi struktur citra yang berguna untuk analisis lebih lanjut.
+
+Namun, terdapat beberapa batasan dalam eksperimen ini. Model U-Net memerlukan dataset yang lebih besar dan pelatihan lebih lama agar dapat mencapai akurasi optimal. Metode Watershed dapat mengalami kesulitan dalam segmentasi citra dengan kontras rendah, yang dapat mempengaruhi keakuratan hasil segmentasi. Sementara itu, metode Canny memerlukan penyetelan parameter yang dilakukan secara manual agar dapat memberikan hasil yang optimal.
+
+Untuk penelitian dan pengembangan di masa depan, disarankan untuk menggunakan dataset yang lebih besar dan lebih beragam guna meningkatkan performa model. Selain itu, metode segmentasi berbasis pembelajaran mendalam yang lebih kompleks dapat dikembangkan untuk mendapatkan hasil yang lebih akurat. Menggabungkan beberapa teknik segmentasi juga dapat menjadi solusi untuk meningkatkan ketahanan terhadap variasi citra. Terakhir, pengoptimalan parameter secara otomatis untuk metode deteksi tepi dapat meningkatkan efisiensi dalam analisis citra.
 
 ---
 
 ## **5. Referensi**
-1. Smith, J., Johnson, R., % Lee, M. (2021). *Image Processing for Early Detection of Liver Diseases.*
-2. World Health Organization. (2022). *Global Report on Liver Desease*.
+- Amrullah, N. (n.d.). KINERJA METODE ALGORITMA FUZZY C-MEANS CLUSTERING UNTUK DETEKSI PENYAKIT LIVER.
+- Brattain, L. J., Ozturk, A., Telfer, B. A., Dhyani, M., Grajo, J. R., & Samir, A. E. (2020). Image Processing Pipeline for Liver Fibrosis Classification Using Ultrasound Shear Wave Elastography. Ultrasound in Medicine & Biology, 46(10), 2667–2676. https://doi.org/10.1016/j.ultrasmedbio.2020.05.016
+- Kumar V, Dr. S. (2023). Early Stage Liver Disease Prediction using Image Processing. International Journal for Research in Applied Science and Engineering Technology, 11(5), 7397–7405. https://doi.org/10.22214/ijraset.2023.52972
+- Saravanan, M. S., Prasad, S. R. K., & Dhanalakshmi, S. (2024). Liver Disease Prediction using various Image Processing Techniques and Machine Learning Algorithms. 2024 First International Conference on Software, Systems and Information Technology (SSITCON), 1–6. https://doi.org/10.1109/SSITCON62437.2024.10796103
+- Yuan, E., Ye, Z., & Song, B. (2022). Imaging-based deep learning in liver diseases. Chinese Medical Journal, 135(11), 1325–1327. https://doi.org/10.1097/CM9.0000000000002199
+ 
 
----
-
-## **6. Percobaan yang dilakukan (Tambah dan lakukan percobaan yang lebih banyak)**
-- pada percobaan pertama kurang tepat untuk mendeteksi area yang terjangkit sehingga anomali yang terbaca kurang tepat dan malah menandai seluruh gambar yang ada.
-- setelah dilakukan beberapa percobaan hasil deteksi area mulai mendekati kemungkinan tetapi masih perlu memperbaiki kode yang ada.
-
----
-Nama : Muhammad Hallaj Nashrulloh
----
-NIM : 2206031
 ---
