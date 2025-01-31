@@ -1,4 +1,4 @@
-![gambar](https://github.com/user-attachments/assets/3abdf568-48b2-4dc4-a26a-55399686b044)Pengolahan CItra DIgital :
+Pengolahan CItra DIgital :
 
 # Deteksi Penyakit Hati/Liver dengan Segmentasi Image Processing 
 
